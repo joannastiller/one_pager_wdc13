@@ -36,7 +36,19 @@ section.top {
     height: 10vh;
 }
 
-h2 {}
+h2 {
+    margin-bottom: 1vh;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.2em;
+    text-transform: uppercase;
+}
+
+h3 {
+    margin: 5% 0;
+    font-family: 'Montserrat', sans-serif;
+    font-size: .7em;
+    text-transform: uppercase;
+}
 
 /* HEADER */
 
@@ -118,7 +130,7 @@ header button {
     }
 }
 
-@media (orientation: landscape) and (max-width: 1440px) {
+@media (orientation: landscape) and (min-width: 991px) {
     header {
         height: 40vh;
     }
@@ -141,10 +153,101 @@ header button {
 
 section.services {
     width: 90vw;
-    margin: 2vh auto;
+    margin: 5vh auto;
+    text-align: center;
 }
 
 div.title {
-    margin: 2vh 0;
-    text-align: center;
+    margin-bottom: 4vh;
+}
+
+.title p {
+    font-size: .6em;
+    color: grey;
+}
+
+img.icon {
+    width: 10%;
+}
+
+div.service {
+    margin: 0 auto 10% auto;
+    width: 70%;
+}
+
+p.service {
+    font-size: .6em;
+    color: grey;
+}
+
+@media (min-width: 600px) {
+    section.services {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 80%;
+    }
+
+    div.service {
+        display: flex;
+        flex-direction: column;
+        flex-basis: 28%;
+        align-items: center;
+    }
+
+    div.title {
+        width: 100%;
+    }
+
+    img.icon {
+        height: 2vh;
+        width: auto;
+        margin-bottom: 2vh;
+    }
+
+    p.service {
+        line-height: 1.6;
+    }
+}
+
+@media (min-width: 900px) {
+
+    section.services {
+        margin-top: 3vh;
+    }
+
+    h2 {
+        margin-bottom: 2vh;
+        font-size: 1.6em;
+    }
+
+    .title p {
+        font-size: .7em;
+    }
+
+    h3 {
+        font-size: 1em;
+    }
+
+    p.service {
+        font-size: 0.7em;
+    }
+}
+
+@media (orientation:landscape) and (min-width: 600px) {
+    div.title {
+        margin: 4vh auto 8vh auto;
+    }
+
+    img.icon {
+        height: 6vh;
+        width: auto;
+        margin-bottom: 3vh;
+    }
+}
+
+@media (orientation:landscape) and (min-width: 600px) {
+    img.icon {
+        height: 4vh;
+    }
 }
