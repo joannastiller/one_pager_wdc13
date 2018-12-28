@@ -157,6 +157,12 @@ header button {
     }
 }
 
+@media (orientation: landscape) and (min-width: 991px) {
+    header h1 {
+        width: 35%;
+    }
+}
+
 /* PROFESSIONAL SERVICES */
 
 section.services {
@@ -302,9 +308,9 @@ div.relax_description {
     color: white;
 }
 
-div.relax_description h2 {
-    /* z-index: 2; */
-}
+/* div.relax_description h2 {
+        z-index: 2;
+    } */
 
 .relax_description h2 span {
     color: #7cc576;
@@ -405,4 +411,129 @@ div.relax_description h2 {
         top: 80%;
     }
 }
+
+/* LATEST PROJECTS */
+
+section.projects {
+    width: 70vw;
+    margin: 5vh auto 3vh auto;
+}
+
+.projects div.title {
+    text-align: center;
+}
+
+div.framework {
+    margin: 0 auto;
+}
+
+div.framework h3 {
+    text-align: center;
+}
+
+section.projects p {
+    font-size: .6em;
+    color: grey;
+}
+
+div.features {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 2vh 0 0 0;
+}
+
+div.feature {
+    margin-bottom: 1vh;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+div.feature i {
+    flex-basis: 13%;
+    margin-right: 3vw;
+    text-align: center;
+    line-height: 2;
+}
+
+div.feature_details {
+    flex-basis: 80%;
+    padding-top: 2%;
+    /* display: flex;
+    flex-wrap: wrap;
+    flex-direction: column; */
+}
+
+div.feature h4 {
+    font-family: 'Montserrat', 'Arial', sans-serif;
+    font-size: .6em;
+}
+
+section.projects p.link {
+    margin-top: 2vh;
+    text-transform: uppercase;
+    font-family: 'Montserrat', 'Arial', sans-serif;
+    color: #7cc576;
+}
+
+section.projects p.link i {
+    color: #7cc576;
+    font-size: .8em;
+}
+
+div.ipad {
+    display: none;
+}
+
+@media (min-width: 600px) {
+
+    section.projects {
+        display: flex;
+        flex-wrap: wrap;
+        width: 90vw;
+        margin-right: 0;
+    }
+
+    .section h3,
+    .section p {
+        flex-basis: 100%;
+    }
+
+    section.projects p,
+    section.projects h4 {
+        font-size: .7em;
+    }
+
+    div.framework {
+        flex-basis: 60%;
+    }
+
+    div.feature {
+        flex-wrap: nowrap;
+    }
+
+    div.feature_details {
+        padding-top: 2%;
+    }
+
+    div.feature i {
+        font-size: 1.3em;
+    }
+
+    div.feature_details {
+        padding-top: 1%;
+    }
+
+    div.ipad {
+        display: block;
+        flex-basis: 40%;
+        overflow: hidden;
+        position: relative;
+    }
+
+    div.ipad img {
+        position: absolute;
+        /* left: -10%; */
+    }
 }
