@@ -489,10 +489,14 @@ div.ipad {
 @media (min-width: 600px) {
 
     section.projects {
+        width: 100%;
+        margin: 6vh 0;
+    }
+
+    div.framework-content {
         display: flex;
         flex-wrap: wrap;
-        width: 90vw;
-        margin-right: 0;
+        padding-left: 10%;
     }
 
     .section h3,
@@ -534,6 +538,70 @@ div.ipad {
 
     div.ipad img {
         position: absolute;
-        /* left: -10%; */
     }
 }
+
+@media (orientation: landscape) {
+    section.projects {
+        width: 90vw;
+    }
+}
+
+/* CULTURE & VALUES */
+
+section.culture {
+    padding: 5vh 10vw;
+    background-color: #e9e9e9;
+    text-align: center;
+}
+
+section.culture p {
+    font-size: 0.6em;
+    color: grey;
+}
+
+div.value {
+    margin-top: 4vh;
+}
+
+@media (min-width: 600px) {
+    section.culture {
+        padding: 3vh 10vw;
+    }
+
+    div.values {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 3%;
+    }
+
+    div.value {
+        flex-basis: 30%;
+    }
+
+    @media (orientation: landscape) and (min-width: 600px) {
+        section.culture {
+            padding: 10vh 10vw;
+        }
+
+        div.values {
+            margin-top: 5%;
+        }
+    }
+
+    @media (orientation: landscape) and (min-width: 900px) {
+        section.culture {
+            padding: 6vh 10vw;
+        }
+
+        section.culture p {
+            font-size: .7em;
+        }
+
+        div.values {
+            width: 80%;
+            margin: 0 auto;
+            margin-top: 3%;
+        }
+
+    }
