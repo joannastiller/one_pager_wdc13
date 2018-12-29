@@ -760,7 +760,7 @@ button.contact:hover {
 /* LOGOS */
 
 section.logos {
-    margin: 5vh auto;
+    margin: 5vh auto 4vh auto;
     width: 50%;
     display: flex;
     flex-wrap: wrap;
@@ -815,23 +815,62 @@ div.contact-us {
     margin: 0 auto;
 }
 
-div.contact-us h3 {
-    flex-basis: 100%
+footer.footer-top h3 {
+    flex-basis: 100%;
+    padding-left: 7%;
 }
 
-div.contact-us i {
-    flex-basis: 20%;
+footer.footer-top i {
+    flex-basis: 25%;
     font-size: .8em;
+    text-align: center;
 }
 
 div.contact-us p {
-    flex-basis: 80%;
+    flex-basis: 75%;
+    margin-bottom: 1vh;
     font-size: .6em;
 }
 
 div.contact-us a {
     color: white;
     text-decoration: none;
+}
+
+@media (min-width: 600px) {
+    footer.footer-top {
+        display: flex;
+        justify-content: space-around;
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+
+    div.contact-us,
+    div.latest-tweets {
+        flex-basis: 30%;
+    }
+
+    div.latest-posts {
+        flex-basis: 40%;
+    }
+
+    div.latest-posts,
+    div.latest-tweets {
+        display: block;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    div.latest-posts p,
+    div.latest-tweets p {
+        flex-basis: 80%;
+        font-size: .6em;
+        margin-bottom: 1vh;
+    }
+
+    footer.footer-top i {
+        flex-basis: 20%;
+    }
 }
 
 /* FOOTER BOTTOM */
