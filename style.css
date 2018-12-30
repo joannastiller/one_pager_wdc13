@@ -297,7 +297,6 @@ div.gear img {
 div.relax_description {
     position: relative;
     flex-basis: 75%;
-    /* padding: 6% 5% 10% 6%; */
     background-image: url("assets/background_relax.png");
     background-repeat: no-repeat;
     background-size: cover;
@@ -436,7 +435,7 @@ div.dark {
 /* LATEST PROJECTS */
 
 section.projects {
-    width: 70vw;
+    width: 65vw;
     margin: 5vh auto 3vh auto;
 }
 
@@ -512,18 +511,22 @@ div.ipad {
 
     section.projects {
         width: 100%;
-        margin: 6vh 0;
+        margin: 3vh 0;
     }
 
     div.framework-content {
         display: flex;
         flex-wrap: wrap;
-        padding-left: 10%;
+        padding-left: 15%;
     }
 
     .section h3,
     .section p {
         flex-basis: 100%;
+    }
+
+    section.projects h3 {
+        text-align: left;
     }
 
     section.projects p,
@@ -532,7 +535,7 @@ div.ipad {
     }
 
     div.framework {
-        flex-basis: 60%;
+        flex-basis: 50%;
     }
 
     div.feature {
@@ -553,21 +556,66 @@ div.ipad {
 
     div.ipad {
         display: block;
-        flex-basis: 40%;
+        flex-basis: 50%;
         overflow: hidden;
         position: relative;
     }
 
     div.ipad img {
         position: absolute;
+        top: 10%;
+        width: 120%;
     }
 }
 
 @media (orientation: landscape) {
     section.projects {
-        width: 90vw;
+        width: 100%;
+        margin: 9vh 0;
+    }
+
+    div.ipad img {
+        bottom: 0;
+        width: 100%;
     }
 }
+
+@media (orientation: landscape) and (min-width: 900px) {
+    div.framework {
+        flex-basis: 40%;
+    }
+
+    div.ipad {
+        flex-basis: 60%;
+    }
+
+    div.ipad img {
+        top: 10%;
+        left: 100%;
+        transform: translateX(-100%);
+        width: 60%;
+    }
+}
+
+@media (orientation: landscape) and (min-width: 1280px) {
+
+    section.projects {
+        margin: 7vh 0;
+    }
+
+    div.framework-content {
+        padding-left: 25%;
+    }
+
+    div.ipad img {
+        top: 0;
+        left: 100%;
+        transform: translateX(-100%);
+        width: 80%;
+    }
+}
+
+
 
 /* CULTURE & VALUES */
 
@@ -648,6 +696,7 @@ section.clients p {
 div.ind-client {
     display: flex;
     justify-content: space-around;
+    align-items: center;
     margin-bottom: 3vh;
 }
 
@@ -661,11 +710,15 @@ div.circle {
 
 div.quotation {
     flex-basis: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     padding: 2% 3%;
     height: 15vw;
     background-color: #e9e9e9;
     border-radius: 6px;
 }
+
 
 .ind-clients p.author {
     margin-top: 2%;
@@ -698,26 +751,35 @@ div.quotation {
 
 @media (orientation: landscape) and (min-width: 900px) {
     div.ind-clients {
-        width: 70%;
+        width: 50%;
     }
 
     div.quotation {
-        flex-basis: 60%;
-        height: 10%;
+        flex-basis: 70%;
+        height: 9vw;
     }
 
     div.circle {
-        height: 13vw;
+        height: 10vw;
     }
 }
 
 @media (orientation: landscape) and (min-width: 1280px) {
+
+    section.clients {
+        margin: 5% auto;
+    }
+
     div.ind-clients {
-        width: 60%;
+        margin: 5% auto;
     }
 
     div.circle {
-        height: 11vw;
+        height: 10vw;
+    }
+
+    div.quotation {
+        flex-basis: 70%;
     }
 }
 
@@ -943,7 +1005,7 @@ div.contact-us a {
 
 footer.footer-bottom {
     width: 70%;
-    margin: 5vh auto;
+    margin: 3vh auto;
     text-align: center;
     font-size: .6em;
 }
@@ -1010,6 +1072,7 @@ footer.footer-bottom a {
 @media (min-width: 1200px) {
 
     footer.footer-bottom {
+        margin: 5vh auto;
         width: 50%;
     }
 
