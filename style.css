@@ -34,10 +34,6 @@ p {
     font-family: 'Roboto Slab', serif;
 }
 
-section.top {
-    height: 10vh;
-}
-
 h2 {
     margin-bottom: 1vh;
     font-family: 'Montserrat', sans-serif;
@@ -60,6 +56,60 @@ h3 {
     top: 0;
     left: 0;
     background: rgba(0, 0, 0, 0.6);
+}
+
+/* TOP MENU */
+
+section.top {
+    position: relative;
+    height: 8vh;
+    width: 90%;
+    margin: 0 0 0 auto;
+}
+
+/* div.logo {
+    display: flex;
+    width: 30%;
+} */
+
+div.green {
+    /* flex-basis: 20%; */
+    position: absolute;
+    top: 50%;
+    left: 0%;
+    transform: translateY(-50%);
+    width: 3vh;
+    height: 3vh;
+    background-color: #7cc576;
+    border-radius: 50%;
+}
+
+div.green img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 60%;
+}
+
+img.logo-th {
+    position: absolute;
+    top: 50%;
+    left: 8%;
+    transform: translateY(-50%);
+    width: 20%;
+}
+
+nav {
+    display: none;
+}
+
+div.burger {
+    position: absolute;
+    top: 50%;
+    right: 10%;
+    transform: translateY(-50%);
+    color: grey;
 }
 
 
