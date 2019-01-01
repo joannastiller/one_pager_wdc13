@@ -197,7 +197,7 @@ header button {
 
 @media (orientation: landscape) and (min-width: 991px) {
     header {
-        height: 40vh;
+        height: 50vh;
     }
 
     header h1 {
@@ -206,7 +206,7 @@ header button {
     }
 
     header p {
-        font-size: .7em;
+        font-size: .8em;
     }
 
     button {
@@ -319,6 +319,14 @@ p.service {
 
     img.icon {
         height: 4vh;
+    }
+}
+
+@media (orientation:landscape) and (min-width: 900px) {
+
+    section.services p,
+    .title p {
+        font-size: .8em;
     }
 }
 
@@ -482,6 +490,14 @@ div.dark {
     }
 }
 
+@media (orientation: landscape) and (min-width: 900px) {
+
+    section.relax p,
+    .relax_description ul {
+        font-size: .8em;
+    }
+}
+
 /* LATEST PROJECTS */
 
 section.projects {
@@ -530,9 +546,6 @@ div.feature i {
 div.feature_details {
     flex-basis: 80%;
     padding-top: 2%;
-    /* display: flex;
-    flex-wrap: wrap;
-    flex-direction: column; */
 }
 
 div.feature h4 {
@@ -653,6 +666,11 @@ div.ipad {
         margin: 7vh 0;
     }
 
+    section.projects p,
+    section.projects h4 {
+        font-size: .8em;
+    }
+
     div.framework-content {
         padding-left: 25%;
     }
@@ -723,6 +741,12 @@ div.value {
         width: 80%;
         margin: 0 auto;
         margin-top: 3%;
+    }
+}
+
+@media (orientation: landscape) and (min-width: 900px) {
+    section.culture p {
+        font-size: .8em;
     }
 }
 
@@ -830,6 +854,10 @@ div.quotation {
 
     div.quotation {
         flex-basis: 70%;
+    }
+
+    div.quotation p {
+        font-size: .8em;
     }
 }
 
