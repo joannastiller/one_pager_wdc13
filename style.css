@@ -101,7 +101,35 @@ img.logo-th {
 }
 
 nav {
-    display: none;
+    position: absolute;
+    top: 100%;
+    right: 0%;
+    z-index: 3;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    color: gray;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav ul li {
+    padding: 2vh 10vw;
+    background-color: rgb(233, 233, 233);
+    border-bottom: 1px solid lightgrey;
+    transition: .3s;
+}
+
+nav ul li:last-of-type {
+    border-bottom: none;
+}
+
+nav ul li:hover {
+    background-color: grey;
+    color: white;
 }
 
 div.burger {
@@ -955,6 +983,14 @@ section.logos div img {
 @media (min-width: 900px) and (orientation: landscape) {
     section.logos {
         width: 50%;
+        margin-top: 6vh;
+        margin-bottom: 5vh;
+    }
+}
+
+@media (min-width: 1280px) and (orientation: landscape) {
+    section.logos {
+        width: 40%;
         margin-top: 6vh;
         margin-bottom: 5vh;
     }
