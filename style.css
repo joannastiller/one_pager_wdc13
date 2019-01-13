@@ -138,6 +138,19 @@ div.burger {
     right: 10%;
     transform: translateY(-50%);
     color: grey;
+    cursor: pointer;
+}
+
+div.burger i {
+    display: none;
+}
+
+section.top div.burger i.active {
+    display: block;
+}
+
+section.top nav {
+    display: none;
 }
 
 
