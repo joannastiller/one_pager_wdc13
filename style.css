@@ -67,13 +67,7 @@ section.top {
     margin: 0 0 0 auto;
 }
 
-/* div.logo {
-    display: flex;
-    width: 30%;
-} */
-
 div.green {
-    /* flex-basis: 20%; */
     position: absolute;
     top: 50%;
     left: 0%;
@@ -145,7 +139,7 @@ div.burger i {
     display: none;
 }
 
-section.top div.burger i.active {
+div.burger i.active {
     display: block;
 }
 
@@ -153,6 +147,139 @@ section.top nav {
     display: none;
 }
 
+section.top nav.active {
+    display: block;
+
+}
+
+@media (min-width: 800px) {
+    section.top {
+        display: flex;
+        margin: 0 auto;
+    }
+
+    div.logo {
+        flex-basis: 15%;
+    }
+
+    div.green {
+        width: 2vh;
+        height: 2vh;
+    }
+
+    img.logo-th {
+        width: 10%;
+        left: 5%;
+    }
+
+    section.top nav {
+        flex-basis: 60%;
+        display: block;
+        flex-direction: row;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        z-index: 1;
+    }
+
+    section.top nav ul {
+        display: flex;
+    }
+
+    .top nav ul li {
+        flex-basis: 15%;
+        padding: 2vh 3vw;
+        background-color: white;
+        border-style: none;
+    }
+
+    div.burger {
+        display: none;
+    }
+}
+
+@media (min-width: 800px) {
+    section.top {
+        height: 7vh;
+        width: 90%;
+    }
+
+    div.green {
+        width: 3vh;
+        height: 3vh;
+    }
+
+    div.green img {
+        width: 50%;
+    }
+
+    img.logo-th {
+        width: 12%;
+        left: 7%;
+    }
+}
+
+@media (orientation: landscape) {
+    section.top {
+        height: 15vh;
+        width: 95%;
+    }
+
+    div.green {
+        width: 8vh;
+        height: 8vh;
+    }
+
+    div.green img {
+        width: 50%;
+    }
+
+    img.logo-th {
+        width: 15%;
+        left: 6%;
+    }
+
+    div.burger {
+        right: 8%;
+    }
+
+    nav ul li {
+        padding: 5vh 10vw;
+    }
+}
+
+@media (orientation: landscape) and (min-width: 800px) {
+    section.top {
+        width: 90%;
+        height: 18vh;
+    }
+
+    div.green {
+        width: 7vh;
+        height: 7vh;
+    }
+
+    img.logo-th {
+        width: 12%;
+        left: 6%;
+    }
+}
+
+@media (orientation: landscape) and (min-width: 1280px) {
+    section.top {
+        height: 10vh;
+    }
+
+    div.green {
+        width: 5vh;
+        height: 5vh;
+    }
+
+    img.logo-th {
+        width: 10%;
+        left: 5%;
+    }
+}
 
 /* HEADER */
 
