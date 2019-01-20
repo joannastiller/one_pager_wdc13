@@ -13,3 +13,13 @@ times.addEventListener('click', function () {
     burger.classList.add('active');
     nav.classList.remove('active');
 })
+
+$('nav ul li').on('click', function () {
+    $('body, html').animate({
+        scrollTop: $("#" + $(this).attr('class')).offset().top
+    }, 1000)
+
+    $('i.fa-times').removeClass('active');
+    $('i.fa-bars').addClass('active');
+    $('nav').removeClass('active');
+})
