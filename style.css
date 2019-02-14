@@ -1,10 +1,3 @@
-/* 
-    font-family: 'Montserrat', sans-serif;
-
-    font-family: 'Roboto Slab', serif; */
-
-
-
 * {
     margin: 0;
     padding: 0;
@@ -68,7 +61,7 @@ section.top {
     position: relative;
     height: 8vh;
     width: 90%;
-    margin: 0 0 0 auto;
+    margin-left: 10%;
 }
 
 div.green {
@@ -134,27 +127,22 @@ div.burger {
     cursor: pointer;
 }
 
-div.burger i {
-    display: none;
-}
-
-div.burger i.active {
-    display: block;
-}
-
+div.burger i,
 section.top nav {
     display: none;
 }
 
+div.burger i.active,
 section.top nav.active {
     display: block;
-
 }
 
 @media (min-width: 800px) {
     section.top {
         display: flex;
         margin: 0 auto;
+        height: 7vh;
+        width: 90%;
     }
 
     div.logo {
@@ -162,13 +150,17 @@ section.top nav.active {
     }
 
     div.green {
-        width: 2vh;
-        height: 2vh;
+        width: 3vh;
+        height: 3vh;
+    }
+
+    div.green img {
+        width: 50%;
     }
 
     img.logo-th {
-        width: 10%;
-        left: 5%;
+        width: 12%;
+        left: 7%;
     }
 
     section.top nav {
@@ -190,6 +182,13 @@ section.top nav.active {
         padding: 2vh 3vw;
         background-color: white;
         border-style: none;
+        transition: .3s;
+    }
+
+    .top nav ul li:hover {
+        color: #7cc576;
+        transform: scaleX(1.1);
+        cursor: pointer;
     }
 
     div.burger {
@@ -197,41 +196,42 @@ section.top nav.active {
     }
 }
 
-@media (min-width: 800px) {
-    section.top {
+/* @media (min-width: 800px) { */
+/* section.top {
         height: 7vh;
         width: 90%;
-    }
+    } */
 
-    div.green {
+/* div.green {
         width: 3vh;
         height: 3vh;
-    }
+    } */
 
-    div.green img {
+/* div.green img {
         width: 50%;
-    }
+    } */
 
-    img.logo-th {
+/* img.logo-th {
         width: 12%;
         left: 7%;
-    }
+    } */
 
-    nav ul li {
+/* nav ul li {
         transition: .3s;
-    }
+    } */
 
-    nav ul li:hover {
+/* nav ul li:hover {
         color: #7cc576;
         transform: scaleX(1.1);
         cursor: pointer;
-    }
-}
+    } */
+/* } */
 
 @media (orientation: landscape) {
     section.top {
         height: 15vh;
         width: 95%;
+        margin-left: 5vw;
     }
 
     div.green {
@@ -272,7 +272,6 @@ section.top nav.active {
         width: 12%;
         left: 6%;
     }
-
 }
 
 @media (orientation: landscape) and (min-width: 1280px) {
@@ -291,17 +290,19 @@ section.top nav.active {
     }
 }
 
-
-
 /* HEADER */
 
 header {
     position: relative;
     height: 30vh;
-    background-image: url("assets/background_header.png");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
+    background: url("assets/background_header.png") center/cover no-repeat;
+}
+
+header h1,
+header p {
+    z-index: 2;
+    text-align: center;
+    color: white;
 }
 
 header h1 {
@@ -309,24 +310,18 @@ header h1 {
     top: 22%;
     left: 50%;
     transform: translateX(-50%);
-    z-index: 2;
     width: 65%;
-    text-align: center;
     font-family: 'Montserrat', 'Arial', sans-serif;
     font-weight: bold;
     font-size: 1.4em;
     text-transform: uppercase;
-    color: white;
 }
 
 header p {
     position: absolute;
     top: 55%;
-    z-index: 2;
     width: 100%;
-    text-align: center;
     font-family: 'Roboto Slab', serif;
-    color: white;
     font-size: .6em;
 }
 
@@ -370,6 +365,10 @@ header button {
         font-size: 1.4em;
     }
 
+    header p {
+        font-size: .6em;
+    }
+
     button {
         padding: 1% 3%;
     }
@@ -398,7 +397,8 @@ header button {
 
 section.services {
     width: 90vw;
-    margin: 5vh auto 3vh auto;
+    margin: 0 auto;
+    padding: 5vh 0 3vh 0;
     text-align: center;
 }
 
@@ -458,7 +458,7 @@ p.service {
 @media (min-width: 900px) {
 
     section.services {
-        margin-top: 3vh;
+        padding-top: 3vh;
     }
 
     h2 {
@@ -535,10 +535,7 @@ div.gear img {
 div.relax_description {
     position: relative;
     flex-basis: 75%;
-    background-image: url("assets/background_relax.png");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
+    background: url("assets/background_relax.png") center/cover no-repeat;
     color: white;
 }
 
@@ -615,29 +612,12 @@ div.dark {
     }
 }
 
-@media (orientation: landscape) and (min-width: 900px) {
-
-    section.relax {
-        height: 17vh;
-    }
-
-    div.relax_description {
-        padding-top: 6%;
-        padding-right: 10%;
-    }
+@media (min-width: 800px) {
 
     .relax_description p,
     .relax_description ul,
     .relax_description button {
         font-size: .7em;
-    }
-
-    .relax_description ul i {
-        font-size: 1.5em;
-    }
-
-    .relax_description button {
-        top: 77%;
     }
 }
 
@@ -656,10 +636,6 @@ div.dark {
         height: 55vh;
     }
 
-    div.relax_description {
-        padding-top: 5%;
-    }
-
     div.relax_description p {
         width: 60%;
         line-height: 1.8;
@@ -670,7 +646,7 @@ div.dark {
     }
 }
 
-@media (orientation: landscape) and (min-width: 900px) {
+@media (orientation: landscape) and (min-width: 1280px) {
 
     section.relax p,
     .relax_description ul {
@@ -682,19 +658,17 @@ div.dark {
 
 section.projects {
     width: 65vw;
-    margin: 5vh auto 3vh auto;
+    margin: 0 auto;
+    padding: 5vh 0 3vh 0;
 }
 
-.projects div.title {
+.projects div.title,
+div.framework h3 {
     text-align: center;
 }
 
 div.framework {
     margin: 0 auto;
-}
-
-div.framework h3 {
-    text-align: center;
 }
 
 section.projects p {
@@ -754,7 +728,7 @@ div.ipad {
 
     section.projects {
         width: 100%;
-        margin: 3vh 0;
+        padding: 3vh 0;
     }
 
     div.framework-content {
@@ -814,7 +788,7 @@ div.ipad {
 @media (orientation: landscape) {
     section.projects {
         width: 100%;
-        margin: 9vh 0;
+        padding: 9vh 0;
     }
 
     div.ipad img {
@@ -843,7 +817,7 @@ div.ipad {
 @media (orientation: landscape) and (min-width: 1280px) {
 
     section.projects {
-        margin: 7vh 0;
+        padding: 7vh 0;
     }
 
     section.projects p,
@@ -864,11 +838,10 @@ div.ipad {
 }
 
 
-
 /* CULTURE & VALUES */
 
 section.culture {
-    padding: 5vh 10vw;
+    padding: 5vh 15vw;
     background-color: #e9e9e9;
     text-align: center;
 }
@@ -890,7 +863,6 @@ div.value {
     div.values {
         display: flex;
         justify-content: space-between;
-        margin-top: 3%;
     }
 
     div.value {
@@ -924,7 +896,7 @@ div.value {
     }
 }
 
-@media (orientation: landscape) and (min-width: 900px) {
+@media (orientation: landscape) and (min-width: 1280px) {
     section.culture p {
         font-size: .8em;
     }
@@ -933,7 +905,8 @@ div.value {
 /* CLIENTS */
 
 section.clients {
-    margin: 5vh auto;
+    margin: 0 auto;
+    padding: 5vh 0 0 0;
     text-align: center;
 }
 
@@ -991,19 +964,25 @@ div.quotation {
 
 @media (orientation: landscape) and (min-width: 600px) {
     section.clients {
-        margin: 8% auto;
+        padding: 12vh 0;
     }
 
     div.ind-clients {
-        margin-top: 8%;
+        margin-top: 10vh;
+        width: 70%;
     }
 
     div.ind-client {
-        margin-bottom: 8%;
+        margin-bottom: 8vh;
     }
 }
 
 @media (orientation: landscape) and (min-width: 900px) {
+
+    section.clients {
+        padding: 8vh 0 5vh 0;
+    }
+
     div.ind-clients {
         width: 50%;
     }
@@ -1019,21 +998,8 @@ div.quotation {
 }
 
 @media (orientation: landscape) and (min-width: 1280px) {
-
-    section.clients {
-        margin: 5% auto;
-    }
-
     div.ind-clients {
         margin: 5% auto;
-    }
-
-    div.circle {
-        height: 10vw;
-    }
-
-    div.quotation {
-        flex-basis: 70%;
     }
 
     div.quotation p {
@@ -1121,7 +1087,7 @@ section.logos div img {
     }
 }
 
-@media (min-width: 600px) and (orientation: landscape) {
+@media (orientation: landscape) and (min-width: 600px) {
     section.logos {
         width: 60%;
         margin: 10vh auto;
@@ -1132,7 +1098,7 @@ section.logos div img {
     }
 }
 
-@media (min-width: 900px) and (orientation: landscape) {
+@media (orientation: landscape) and (min-width: 900px) {
     section.logos {
         width: 50%;
         margin-top: 6vh;
@@ -1143,8 +1109,6 @@ section.logos div img {
 @media (min-width: 1280px) and (orientation: landscape) {
     section.logos {
         width: 40%;
-        margin-top: 6vh;
-        margin-bottom: 5vh;
     }
 }
 
@@ -1246,7 +1210,7 @@ div.contact-us a {
     }
 }
 
-@media (orientation: landscape) and (min-width: 800px) {
+@media (orientation: landscape) and (min-width: 700px) {
     footer.footer-top {
         padding: 5vh auto;
     }
@@ -1260,7 +1224,7 @@ div.contact-us a {
     }
 }
 
-@media (orientation: landscape) and (min-width: 1000px) {
+@media (orientation: landscape) and (min-width: 900px) {
     footer.footer-top {
         padding-left: 15%;
         padding-right: 15%;
