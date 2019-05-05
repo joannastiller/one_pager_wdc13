@@ -1,6 +1,6 @@
-# single-page_wdc13
+# single-page from PSD to HTML
 
-A single page project - from psd to html (from the Weekly Dev Challenge), reponsive.<br/> 
-It uses HTML, CSS, JS and jQuery. 
+A single page project - from psd to html. Desktop view was provided (as in the attached jpg), I had to create tablet and mobile views. <br/> 
+Technology stack used: HTML, CSS, JS and jQuery. 
 
-Live view: https://joannastiller.github.io/single-page_wdc13/
+Live view: https://joannastiller.github.io/psd_to_html/
